@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{296b1a1b-8eed-472d-ab73-bd975d1c80ae}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile>alien\alien_invasion.py</StartupFile>
+    <SearchPath>alien\</SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterId />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="alien\alien.py" />
+    <Compile Include="alien\alien_invasion.py" />
+    <Compile Include="alien\bullet.py" />
+    <Compile Include="alien\game_stats.py" />
+    <Compile Include="alien\settings.py" />
+    <Compile Include="alien\ship.py" />
+    <Compile Include="learnpython\learnpython.py" />
+    <Compile Include="PythonApplication1\PythonApplication1.py" />
+    <Compile Include="PythonApplication2\PythonApplication2.py" />
+    <Compile Include="PythonApplication3\PythonApplication3.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="alien\images\alien.bmp" />
+    <Content Include="alien\images\ship.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="alien" />
+    <Folder Include="alien\images" />
+    <Folder Include="learnpython" />
+    <Folder Include="PythonApplication1" />
+    <Folder Include="PythonApplication2" />
+    <Folder Include="PythonApplication3" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+</Project>
